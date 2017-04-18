@@ -864,10 +864,10 @@ class HomeScreenViewController: UIViewController,UITableViewDelegate,UITableView
                         tableView.reloadData()
                         
                     }
-                    
-                    
-                    
-                    
+                    else if data?.count != 0{
+                        self.view.makeToast("No Jobs Found")
+                    }
+                     
                 }
                 
             }
@@ -963,8 +963,173 @@ class HomeScreenViewController: UIViewController,UITableViewDelegate,UITableView
             self.present(alert, animated: true, completion: nil)
         })
         
+    }
+    
+    
+    
+    func ApiCall() {
+        
+          progressBarDisplayer("Processing ...", true)
+        
+        let post = "token=\("\(userDefaults.value(forKey: "Device_Token") as! String)")"
+        var postData = post.data(using: String.Encoding.ascii, allowLossyConversion: true)
+        let postLength = "\(postData?.count)"
+        
+        print("Jobs dic : \(post) \n")
+        
+        let url = URL(string:"https://globaltalentsystems.com/api/api.php?action=jobs")!
+        let request = NSMutableURLRequest(url: url)
+        request.httpMethod = "POST"
+        request.setValue(postLength, forHTTPHeaderField: "Content-Length")
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        request.httpBody = postData!
+        
+        let task = URLSession.shared.dataTask(with: request as URLRequest){ data, response, error in
+            if error != nil{
+                DispatchQueue.main.async {
+                    self.allview.removeFromSuperview()
+                }
+                print("Error -> \(error)")
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "postError"), object: nil)
+                return
+            }
+            
+            do {
+                let result = try JSONSerialization.jsonObject(with: data!, options: []) as? [String:AnyObject]
+                
+                print("Jobs API Result : \(result!) \n")
+                
+                if (result?["status"])! as! String == "true"{
+                    
+                    
+                    let context = SingletonClass.getContext()
+                    let entity =  NSEntityDescription.entity(forEntityName: "Jobs", in: context)
+                    
+                    let transc = NSManagedObject(entity: entity!, insertInto: context)
+                    transc.setValue(data!, forKey: "data")
+                    
+                    do {
+                        try context.save()
+                        
+                        print("Jobs Data saved! \n")
+                        
+                        DispatchQueue.main.async {
+                               self.allview.removeFromSuperview()
+                        }
+                        
+                        self.ReadCoreData()
+                        
+                    } catch let error as NSError  {
+                        DispatchQueue.main.async {
+                            self.allview.removeFromSuperview()
+                        }
+                        print("Could not save \(error), \(error.userInfo)")
+                    } catch {
+                        DispatchQueue.main.async {
+                            self.allview.removeFromSuperview()
+                        }
+                        
+                    }
+                    
+                }
+                else if (result?["status"])! as! String == "false"{
+                    DispatchQueue.main.async {
+                        self.allview.removeFromSuperview()
+                    }
+                    
+                    if (result?["message"])! as! String == "logged out."{
+                        let alert = UIAlertController(title: "Message", message: "Session Expired", preferredStyle: UIAlertControllerStyle.alert)
+                        
+                        alert.addAction(UIAlertAction(title: "Ok", style: .destructive, handler: { action in
+                            
+                            var count = 0
+                            let context = SingletonClass.getContext()
+                            // let fetchRequest: NSFetchRequest<Info> = Info.fetchRequest()
+                            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Jobs")
+                            do {
+                                let searchResults = try SingletonClass.getContext().fetch(fetchRequest)
+                                
+                                count = searchResults.count
+                                
+                                if count != 0 {
+                                    
+                                    for searchResults in searchResults{
+                                        //let data = (searchResults as AnyObject).value(forKey: "data") as! NSData
+                                        
+                                        context.delete(searchResults as! NSManagedObject)
+                                        do {
+                                            try context.save()
+                                            
+                                            print("Deleted!")
+                                            
+                                            let single = SingletonClass.userDefaultsObj()
+                                            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                                            single.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
+                                            self.userDefaults.set("Success", forKey: "T&CStatus")
+                                            DispatchQueue.main.async {
+                                                
+                                                // let viewControllers = self.navigationController?.viewControllers
+                                                
+                                                let vc = storyboard.instantiateViewController(withIdentifier: "LoginScreenViewController") as! LoginScreenViewController
+                                                
+                                                //  vc.homeindex = (viewControllers?.count)! - 1
+                                                
+                                                self.navigationController?.pushViewController(vc, animated: true)
+                                                
+                                            }
+                                            
+                                            
+                                        } catch let error as NSError  {
+                                            print("Could not delete. \(error), \(error.userInfo)")
+                                        } catch {
+                                            
+                                        }
+                                        
+                                    }
+                                    
+                                }
+                                else{
+                                    let single = SingletonClass.userDefaultsObj()
+                                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                                    single.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
+                                    self.userDefaults.set("Success", forKey: "T&CStatus")
+                                    DispatchQueue.main.async {
+                                        
+                                        // let viewControllers = self.navigationController?.viewControllers
+                                        
+                                        let vc = storyboard.instantiateViewController(withIdentifier: "LoginScreenViewController") as! LoginScreenViewController
+                                        
+                                        //  vc.homeindex = (viewControllers?.count)! - 1
+                                        
+                                        self.navigationController?.pushViewController(vc, animated: true)
+                                        
+                                    }
+                                }
+                                
+                            } catch {
+                                print("Error with request: \(error)")
+                            }
+                            
+                            
+                        }))
+                        
+                        DispatchQueue.main.async(execute: {
+                            self.present(alert, animated: true, completion: nil)
+                        })
+                    }
+                }
+            }
+            catch {
+                DispatchQueue.main.async {
+                    self.allview.removeFromSuperview()
+                }
+                print("Error -> \(error)")
+            }
+        }
+        task.resume()
         
     }
+    
 }
 		
 

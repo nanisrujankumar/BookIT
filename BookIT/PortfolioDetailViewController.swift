@@ -74,9 +74,7 @@ class PortfolioDetailViewController: UIViewController {
         
         let postData = NSMutableData(data: "token=\(userDefaults.value(forKey: "Device_Token") as! String)".data(using: String.Encoding.utf8)!)
         postData.append("&porturl=\(userDefaults.value(forKey: "PortFolioDownloadLink") as! String)".data(using: String.Encoding.utf8)!)
-        
-       // print("Portfolio Download link dic : \(postData) \n")
-        
+            
         let postLength = "\(postData.length)"
 		
 		let url = URL(string:"https://globaltalentsystems.com/api/api.php?action=portfoliolink")!
