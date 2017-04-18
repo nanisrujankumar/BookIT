@@ -351,7 +351,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xs-aW-npT">
                                 <rect key="frame" x="31" y="379" width="315" height="2"/>
@@ -618,7 +618,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jobs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mp9-Fj-L4h">
-                                        <rect key="frame" x="70" y="23" width="44" height="32"/>
+                                        <rect key="frame" x="70" y="23" width="39.5" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="bgh-uK-fMq"/>
                                         </constraints>
@@ -1017,7 +1017,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9f-5K-h4k">
-                                        <rect key="frame" x="70" y="23" width="198" height="32"/>
+                                        <rect key="frame" x="70" y="23" width="200.5" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="AAX-o3-evn"/>
                                         </constraints>
@@ -1260,7 +1260,7 @@ There are many variations of passages of Lorem Ipsum available, but the majority
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emma Olivia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJP-8K-A2x">
-                                                <rect key="frame" x="103" y="143" width="110" height="32"/>
+                                                <rect key="frame" x="102" y="143" width="112" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="32" id="vnf-g6-e84"/>
                                                 </constraints>
@@ -1269,7 +1269,7 @@ There are many variations of passages of Lorem Ipsum available, but the majority
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="emma@gmail.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmF-8G-qRL">
-                                                <rect key="frame" x="78.5" y="185" width="158.5" height="32"/>
+                                                <rect key="frame" x="75.5" y="185" width="165" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="32" id="O9J-JO-A7u"/>
                                                 </constraints>
@@ -1312,7 +1312,7 @@ There are many variations of passages of Lorem Ipsum available, but the majority
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jobs / Go See" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnx-dj-Rib">
-                                                            <rect key="frame" x="74" y="14" width="121.5" height="32"/>
+                                                            <rect key="frame" x="74" y="14" width="128.5" height="32"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="32" id="Crc-iJ-PUM"/>
                                                             </constraints>
@@ -1569,7 +1569,7 @@ There are many variations of passages of Lorem Ipsum available, but the majority
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DiP-l9-nNI" id="Rgf-sJ-j5C">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPb-c4-aM6">

@@ -1,0 +1,29 @@
+PODS:
+  - Crashlytics (3.8.4):
+    - Fabric (~> 1.6.3)
+  - DatePickerDialog (1.1.7)
+  - Fabric (1.6.11)
+  - GoogleMaps (2.2.0):
+    - GoogleMaps/Maps (= 2.2.0)
+  - GoogleMaps/Base (2.2.0)
+  - GoogleMaps/Maps (2.2.0):
+    - GoogleMaps/Base
+  - Toast-Swift (2.0.0)
+
+DEPENDENCIES:
+  - Crashlytics
+  - DatePickerDialog
+  - Fabric
+  - GoogleMaps
+  - Toast-Swift
+
+SPEC CHECKSUMS:
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  DatePickerDialog: bd5e7e92e4da2c6a8966b28d5f5d8f335d6c2c63
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
+  Toast-Swift: 5b2f8f720f7e78e48511f693df1f9c9a6e38a25a
+
+PODFILE CHECKSUM: c601ed42559d055f312b49e31624d3be4300ddae
+
+COCOAPODS: 1.2.0
