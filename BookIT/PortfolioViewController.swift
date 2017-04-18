@@ -109,7 +109,7 @@ class PortfolioViewController: UIViewController,UITableViewDelegate,UITableViewD
     func ApiCall() {
         
         progressBarDisplayer("Processing ...", true)
-        ////
+        //
         let post = "token=\("\(userDefaults.value(forKey: "Device_Token") as! String)")"
         var postData = post.data(using: String.Encoding.ascii, allowLossyConversion: true)
         let postLength = "\(postData?.count)"
