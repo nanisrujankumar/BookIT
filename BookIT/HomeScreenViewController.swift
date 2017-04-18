@@ -866,6 +866,7 @@ class HomeScreenViewController: UIViewController,UITableViewDelegate,UITableView
                     }
                     else if data?.count != 0{
                         self.view.makeToast("No Jobs Found")
+                        self.ApiCall()
                     }
                      
                 }
