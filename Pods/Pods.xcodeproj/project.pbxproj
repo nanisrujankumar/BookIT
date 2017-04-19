@@ -1,0 +1,820 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03A95EB83E0A8E10F7E0B4DB551D5200 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9644E3B5D9D4B8CCD92485D936155962 /* DatePickerDialog.swift */; };
+		04FD97B097879C1E93F9D5D782240B7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
+		0AB7B699735831B698AF212113EA3D9F /* Pods-BookIT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B73AE4271F2E75A47303F51BFEFD2EC8 /* Pods-BookIT-dummy.m */; };
+		4A49FB1C6C99BD57DD8A7FA69ABED8F8 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA9CD39A660261B0D8CDB81EBC7C553 /* Toast.swift */; };
+		7BB056BB4AD65CB66380CBDD52CB0FD3 /* DatePickerDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51452F9B8EE4ED66ECAC8F0F1639E22B /* DatePickerDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F62A54C4CB23008BFE50BFFC7D341FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */; };
+		823879247E5F195DFB618418E48B7A31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
+		9B7ACBCF37D862BF8DA45778DE32F720 /* Toast-Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0B4D5AD7B4FF361837CDFECF97EB1B /* Toast-Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A80F2C62B55D2DD9B24694DBCF54A10C /* Pods-BookIT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FCB1535CD502ECFB9B5FD46E7B5199A /* Pods-BookIT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AECAB2802C5C50CABF3024AE651C1BCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */; };
+		DE45DAEE660ADE5C146EE7CF7259F35A /* DatePickerDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E5AED0B58109ECAD844F0F289E2D77 /* DatePickerDialog-dummy.m */; };
+		FB2662B89F9E6EF8C9B8B27C146D28E7 /* Toast-Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C42EA895E5850FA569D4A02DA192ED70 /* Toast-Swift-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		323DD6E2678566EF8FF5B15A9BF2D10D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88F26720523A52B4BF64556A57C05606;
+			remoteInfo = "Toast-Swift";
+		};
+		E120CE602A1475BFF467E504CDFFA81F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 184A1650DC0B648BD756068E60BF2C59;
+			remoteInfo = DatePickerDialog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03FB829A46627120ADB19C0EF5F4FA67 /* FABAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FABAttributes.h; path = iOS/Fabric.framework/Headers/FABAttributes.h; sourceTree = "<group>"; };
+		0811CD550CBB4909066273620BDD0EF6 /* DatePickerDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = DatePickerDialog.modulemap; sourceTree = "<group>"; };
+		0D98716E41FBD857B6444F8684461B3F /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
+		0FCB1535CD502ECFB9B5FD46E7B5199A /* Pods-BookIT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BookIT-umbrella.h"; sourceTree = "<group>"; };
+		17523E7FC8C2316BCE02971B99096EF1 /* DatePickerDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DatePickerDialog-prefix.pch"; sourceTree = "<group>"; };
+		1865CAC9A0A522390A4A638F96D606AB /* Toast_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Toast_Swift.framework; path = "Toast-Swift.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B4AA667B97EFC68E05CE22681A2198E /* Pods_BookIT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BookIT.framework; path = "Pods-BookIT.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2010CC3F9D9D4B59F7EE961A75B8551B /* Toast-Swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.xcconfig"; sourceTree = "<group>"; };
+		20B38C7095985BAB6A9BCEE7C9508471 /* DatePickerDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DatePickerDialog.framework; path = DatePickerDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21DB428CE7BE310F33285E28C5AFE644 /* Pods-BookIT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-BookIT.modulemap"; sourceTree = "<group>"; };
+		2942F8F38AD008E62C838DDCF6294055 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		371FA746E19BE8E1AB93193A88CA1448 /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
+		38DA42EDC63A182756065D5C2297A5F5 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
+		3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		41961A3722D49599664BB65789F636E2 /* Pods-BookIT-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BookIT-resources.sh"; sourceTree = "<group>"; };
+		43A7A4CD642C88440A7EA5988090B413 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51452F9B8EE4ED66ECAC8F0F1639E22B /* DatePickerDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DatePickerDialog-umbrella.h"; sourceTree = "<group>"; };
+		5471120897639F7FAE776AD0A513A517 /* DatePickerDialog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DatePickerDialog.xcconfig; sourceTree = "<group>"; };
+		55FA5D714194AC7C1FCD9343722A7DC2 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		56272BE3AE835990D9AD2FE0154B52D7 /* Pods-BookIT-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BookIT-frameworks.sh"; sourceTree = "<group>"; };
+		59E5AED0B58109ECAD844F0F289E2D77 /* DatePickerDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DatePickerDialog-dummy.m"; sourceTree = "<group>"; };
+		5DA9CD39A660261B0D8CDB81EBC7C553 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
+		61ACAD813C44731E2E0A2D9A387CC185 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
+		6D0B4D5AD7B4FF361837CDFECF97EB1B /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
+		72D7D4D0C365F48C80908A5DEF42F17F /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
+		738C2EE614280130F055BB6DA0D71B01 /* Pods-BookIT-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BookIT-acknowledgements.plist"; sourceTree = "<group>"; };
+		796FB9D614923866EB9EEE82EC70C298 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
+		7AF2F72A24125D60B44A0AD92CAE62E1 /* CLSAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSAttributes.h; path = iOS/Crashlytics.framework/Headers/CLSAttributes.h; sourceTree = "<group>"; };
+		8B9EA9F23C3D6CAE1307FE0BFA4B6F30 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
+		8DC09B1D4FC1BADBCBD51C5806918AD3 /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
+		8F511A17F6CDA52FD3B493B0E8D06A09 /* Pods-BookIT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BookIT.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9644E3B5D9D4B8CCD92485D936155962 /* DatePickerDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatePickerDialog.swift; path = Sources/DatePickerDialog.swift; sourceTree = "<group>"; };
+		9DDAF129A06EBF24CBCBFA113BD3FCA3 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
+		B0EFCDBCC7BE9B65797DBFD353FBDF9C /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		B73AE4271F2E75A47303F51BFEFD2EC8 /* Pods-BookIT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BookIT-dummy.m"; sourceTree = "<group>"; };
+		B9F9EF993FA55D022C0AF5FB6637178A /* Pods-BookIT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BookIT.debug.xcconfig"; sourceTree = "<group>"; };
+		BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		C42EA895E5850FA569D4A02DA192ED70 /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
+		CC4E316AFB7F05E0123D8885F5543896 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14E03A9DD49C6975210CC99F9C76385 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
+		E18A3CFB27B40D5DCC40EED270B065DE /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
+		E9BD62020563D976E83764711F77F242 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		EAA2CE7C518717FF629C68001126FADF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F39B5AB9B847D9C93F5305A19F18BCD0 /* Pods-BookIT-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BookIT-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0006EA43E3B6B0CD9218AC48ECCD97B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AECAB2802C5C50CABF3024AE651C1BCF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31AE3E263B8032AC2966F95252E5AADC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				823879247E5F195DFB618418E48B7A31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7375B1AB21C15A4309ED45E868B106AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FD97B097879C1E93F9D5D782240B7D /* Foundation.framework in Frameworks */,
+				7F62A54C4CB23008BFE50BFFC7D341FA /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CEA6C00F35F3F4E56218E788E429C14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A97D67AB77539A42C7C14A7EAFB9DE1 /* Crashlytics */,
+				19BFE1E96E4FC85238FC4310C174E0A1 /* DatePickerDialog */,
+				E3AD2DD0A5B912538C307859D9480E4F /* Fabric */,
+				746CBF94DF18832DA1C467FF88C3453B /* GoogleMaps */,
+				7A5FAE1CC4CE604AEC4427B393C633E9 /* Toast-Swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1886E8FD955D979D3D9D5B3B45AE40C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B0EFCDBCC7BE9B65797DBFD353FBDF9C /* GoogleMaps.framework */,
+				2942F8F38AD008E62C838DDCF6294055 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19BFE1E96E4FC85238FC4310C174E0A1 /* DatePickerDialog */ = {
+			isa = PBXGroup;
+			children = (
+				9644E3B5D9D4B8CCD92485D936155962 /* DatePickerDialog.swift */,
+				A98FA84E769EC1B0E289C4C65122BA6C /* Support Files */,
+			);
+			name = DatePickerDialog;
+			path = DatePickerDialog;
+			sourceTree = "<group>";
+		};
+		3256614C494B19D5F5C8F90C1DE9D6B6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4AA7215BBD784D64E26AC970489269B2 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		32844C9B530EE82D9C6A7B2F79A3945B /* Pods-BookIT */ = {
+			isa = PBXGroup;
+			children = (
+				CC4E316AFB7F05E0123D8885F5543896 /* Info.plist */,
+				21DB428CE7BE310F33285E28C5AFE644 /* Pods-BookIT.modulemap */,
+				F39B5AB9B847D9C93F5305A19F18BCD0 /* Pods-BookIT-acknowledgements.markdown */,
+				738C2EE614280130F055BB6DA0D71B01 /* Pods-BookIT-acknowledgements.plist */,
+				B73AE4271F2E75A47303F51BFEFD2EC8 /* Pods-BookIT-dummy.m */,
+				56272BE3AE835990D9AD2FE0154B52D7 /* Pods-BookIT-frameworks.sh */,
+				41961A3722D49599664BB65789F636E2 /* Pods-BookIT-resources.sh */,
+				0FCB1535CD502ECFB9B5FD46E7B5199A /* Pods-BookIT-umbrella.h */,
+				B9F9EF993FA55D022C0AF5FB6637178A /* Pods-BookIT.debug.xcconfig */,
+				8F511A17F6CDA52FD3B493B0E8D06A09 /* Pods-BookIT.release.xcconfig */,
+			);
+			name = "Pods-BookIT";
+			path = "Target Support Files/Pods-BookIT";
+			sourceTree = "<group>";
+		};
+		3AD2D3EE48AE46DD883D308FEC0AD3DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E9BD62020563D976E83764711F77F242 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7AB6F27FF3606F9360547F8F1977A63 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AA7215BBD784D64E26AC970489269B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55FA5D714194AC7C1FCD9343722A7DC2 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D0C012E8036A065D866BCE0D292C3AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20B38C7095985BAB6A9BCEE7C9508471 /* DatePickerDialog.framework */,
+				1B4AA667B97EFC68E05CE22681A2198E /* Pods_BookIT.framework */,
+				1865CAC9A0A522390A4A638F96D606AB /* Toast_Swift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		746CBF94DF18832DA1C467FF88C3453B /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				3256614C494B19D5F5C8F90C1DE9D6B6 /* Base */,
+				CEEAEFFC5A3EC99849187149E4EB4F26 /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		764EEBC2C1B5D82422BE0F46D72C9D95 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAA2CE7C518717FF629C68001126FADF /* Info.plist */,
+				72D7D4D0C365F48C80908A5DEF42F17F /* Toast-Swift.modulemap */,
+				2010CC3F9D9D4B59F7EE961A75B8551B /* Toast-Swift.xcconfig */,
+				C42EA895E5850FA569D4A02DA192ED70 /* Toast-Swift-dummy.m */,
+				371FA746E19BE8E1AB93193A88CA1448 /* Toast-Swift-prefix.pch */,
+				6D0B4D5AD7B4FF361837CDFECF97EB1B /* Toast-Swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Toast-Swift";
+			sourceTree = "<group>";
+		};
+		7A5FAE1CC4CE604AEC4427B393C633E9 /* Toast-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				5DA9CD39A660261B0D8CDB81EBC7C553 /* Toast.swift */,
+				764EEBC2C1B5D82422BE0F46D72C9D95 /* Support Files */,
+			);
+			name = "Toast-Swift";
+			path = "Toast-Swift";
+			sourceTree = "<group>";
+		};
+		7A97D67AB77539A42C7C14A7EAFB9DE1 /* Crashlytics */ = {
+			isa = PBXGroup;
+			children = (
+				8DC09B1D4FC1BADBCBD51C5806918AD3 /* ANSCompatibility.h */,
+				796FB9D614923866EB9EEE82EC70C298 /* Answers.h */,
+				7AF2F72A24125D60B44A0AD92CAE62E1 /* CLSAttributes.h */,
+				9DDAF129A06EBF24CBCBFA113BD3FCA3 /* CLSLogging.h */,
+				D14E03A9DD49C6975210CC99F9C76385 /* CLSReport.h */,
+				E18A3CFB27B40D5DCC40EED270B065DE /* CLSStackFrame.h */,
+				38DA42EDC63A182756065D5C2297A5F5 /* Crashlytics.h */,
+				D7AFD9732DB55ED39A3E5D2468CEF1A4 /* Frameworks */,
+			);
+			name = Crashlytics;
+			path = Crashlytics;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				0CEA6C00F35F3F4E56218E788E429C14 /* Pods */,
+				6D0C012E8036A065D866BCE0D292C3AF /* Products */,
+				84DAAC00790CD48376A7E971CAB10F91 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		84DAAC00790CD48376A7E971CAB10F91 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				32844C9B530EE82D9C6A7B2F79A3945B /* Pods-BookIT */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A98FA84E769EC1B0E289C4C65122BA6C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0811CD550CBB4909066273620BDD0EF6 /* DatePickerDialog.modulemap */,
+				5471120897639F7FAE776AD0A513A517 /* DatePickerDialog.xcconfig */,
+				59E5AED0B58109ECAD844F0F289E2D77 /* DatePickerDialog-dummy.m */,
+				17523E7FC8C2316BCE02971B99096EF1 /* DatePickerDialog-prefix.pch */,
+				51452F9B8EE4ED66ECAC8F0F1639E22B /* DatePickerDialog-umbrella.h */,
+				43A7A4CD642C88440A7EA5988090B413 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DatePickerDialog";
+			sourceTree = "<group>";
+		};
+		C7AB6F27FF3606F9360547F8F1977A63 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3AC5D9C5B838BE747D0154460D02F926 /* Foundation.framework */,
+				BACC64101FAE4862F8806DB02FC71B0E /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CEEAEFFC5A3EC99849187149E4EB4F26 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				1886E8FD955D979D3D9D5B3B45AE40C6 /* Frameworks */,
+				3AD2D3EE48AE46DD883D308FEC0AD3DA /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		D7AFD9732DB55ED39A3E5D2468CEF1A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61ACAD813C44731E2E0A2D9A387CC185 /* Crashlytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E39CEFF65BF1C3F4DE0D76889CF218EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D98716E41FBD857B6444F8684461B3F /* Fabric.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3AD2DD0A5B912538C307859D9480E4F /* Fabric */ = {
+			isa = PBXGroup;
+			children = (
+				03FB829A46627120ADB19C0EF5F4FA67 /* FABAttributes.h */,
+				8B9EA9F23C3D6CAE1307FE0BFA4B6F30 /* Fabric.h */,
+				E39CEFF65BF1C3F4DE0D76889CF218EB /* Frameworks */,
+			);
+			name = Fabric;
+			path = Fabric;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A207FC3952577110EC400AE351891E7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B7ACBCF37D862BF8DA45778DE32F720 /* Toast-Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2675140161515F2E9F99FEB0F11F1ED3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB056BB4AD65CB66380CBDD52CB0FD3 /* DatePickerDialog-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65FAB9BE205F441926AD9DAA362811A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80F2C62B55D2DD9B24694DBCF54A10C /* Pods-BookIT-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1576C309014A81E346BC9C55F44AAD22 /* Pods-BookIT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A47D3B1D4A02BA067C3E4585DA4134B /* Build configuration list for PBXNativeTarget "Pods-BookIT" */;
+			buildPhases = (
+				6DC3C4A175BF4BC60A9844B8244760FD /* Sources */,
+				0006EA43E3B6B0CD9218AC48ECCD97B9 /* Frameworks */,
+				65FAB9BE205F441926AD9DAA362811A2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7908C185EC5E8CAC74D7EBDFCC11D68 /* PBXTargetDependency */,
+				BF7607378B38A4B035532458E68A484D /* PBXTargetDependency */,
+			);
+			name = "Pods-BookIT";
+			productName = "Pods-BookIT";
+			productReference = 1B4AA667B97EFC68E05CE22681A2198E /* Pods_BookIT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		184A1650DC0B648BD756068E60BF2C59 /* DatePickerDialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD5CF02785F10F0CDA34F90832C66CFA /* Build configuration list for PBXNativeTarget "DatePickerDialog" */;
+			buildPhases = (
+				1D432F1231D861C3C85333A043376EAE /* Sources */,
+				31AE3E263B8032AC2966F95252E5AADC /* Frameworks */,
+				2675140161515F2E9F99FEB0F11F1ED3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DatePickerDialog;
+			productName = DatePickerDialog;
+			productReference = 20B38C7095985BAB6A9BCEE7C9508471 /* DatePickerDialog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		88F26720523A52B4BF64556A57C05606 /* Toast-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77D315A9FEA74EA44C359BF991FE7E32 /* Build configuration list for PBXNativeTarget "Toast-Swift" */;
+			buildPhases = (
+				62C3DA3EB26A508BCF057C2F013FD072 /* Sources */,
+				7375B1AB21C15A4309ED45E868B106AF /* Frameworks */,
+				0A207FC3952577110EC400AE351891E7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Toast-Swift";
+			productName = "Toast-Swift";
+			productReference = 1865CAC9A0A522390A4A638F96D606AB /* Toast_Swift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6D0C012E8036A065D866BCE0D292C3AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				184A1650DC0B648BD756068E60BF2C59 /* DatePickerDialog */,
+				1576C309014A81E346BC9C55F44AAD22 /* Pods-BookIT */,
+				88F26720523A52B4BF64556A57C05606 /* Toast-Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D432F1231D861C3C85333A043376EAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE45DAEE660ADE5C146EE7CF7259F35A /* DatePickerDialog-dummy.m in Sources */,
+				03A95EB83E0A8E10F7E0B4DB551D5200 /* DatePickerDialog.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C3DA3EB26A508BCF057C2F013FD072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB2662B89F9E6EF8C9B8B27C146D28E7 /* Toast-Swift-dummy.m in Sources */,
+				4A49FB1C6C99BD57DD8A7FA69ABED8F8 /* Toast.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC3C4A175BF4BC60A9844B8244760FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB7B699735831B698AF212113EA3D9F /* Pods-BookIT-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF7607378B38A4B035532458E68A484D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Toast-Swift";
+			target = 88F26720523A52B4BF64556A57C05606 /* Toast-Swift */;
+			targetProxy = 323DD6E2678566EF8FF5B15A9BF2D10D /* PBXContainerItemProxy */;
+		};
+		E7908C185EC5E8CAC74D7EBDFCC11D68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DatePickerDialog;
+			target = 184A1650DC0B648BD756068E60BF2C59 /* DatePickerDialog */;
+			targetProxy = E120CE602A1475BFF467E504CDFFA81F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		09797A496392F0A9BEEF5974ECDDE04F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F511A17F6CDA52FD3B493B0E8D06A09 /* Pods-BookIT.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BookIT/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BookIT/Pods-BookIT.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BookIT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BBB52D298C5783EEA30E519DE97BAC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5471120897639F7FAE776AD0A513A517 /* DatePickerDialog.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DatePickerDialog/DatePickerDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DatePickerDialog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DatePickerDialog/DatePickerDialog.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DatePickerDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6FEC289C08E63F5D1DD22165114E3532 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2010CC3F9D9D4B59F7EE961A75B8551B /* Toast-Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Toast-Swift/Toast-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Toast_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7A83D5DA459FEF013B8BC8813FAC37DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5471120897639F7FAE776AD0A513A517 /* DatePickerDialog.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DatePickerDialog/DatePickerDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DatePickerDialog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DatePickerDialog/DatePickerDialog.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DatePickerDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0219C044558CC61396FCFCBE693182A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9F9EF993FA55D022C0AF5FB6637178A /* Pods-BookIT.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BookIT/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BookIT/Pods-BookIT.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BookIT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B666ED8249D41F2317B51001222B8466 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2010CC3F9D9D4B59F7EE961A75B8551B /* Toast-Swift.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Toast-Swift/Toast-Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Toast-Swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Toast-Swift/Toast-Swift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Toast_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A47D3B1D4A02BA067C3E4585DA4134B /* Build configuration list for PBXNativeTarget "Pods-BookIT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0219C044558CC61396FCFCBE693182A /* Debug */,
+				09797A496392F0A9BEEF5974ECDDE04F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77D315A9FEA74EA44C359BF991FE7E32 /* Build configuration list for PBXNativeTarget "Toast-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B666ED8249D41F2317B51001222B8466 /* Debug */,
+				6FEC289C08E63F5D1DD22165114E3532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD5CF02785F10F0CDA34F90832C66CFA /* Build configuration list for PBXNativeTarget "DatePickerDialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BBB52D298C5783EEA30E519DE97BAC5 /* Debug */,
+				7A83D5DA459FEF013B8BC8813FAC37DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
